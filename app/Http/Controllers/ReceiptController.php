@@ -625,7 +625,7 @@ public function image(Request $request, Receipt $receipt)
                         'financial_period_id' => $period->id,
                         'category_id' => $categoryId,
                         'amount' => $amount,
-                        'date' => $date,
+                        'expense_date' => $date,
                         'merchant' => $receipt->merchant,
                         'description' =>
                             'Receipt purchase - ' . $receipt->merchant,
