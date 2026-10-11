@@ -13,12 +13,12 @@ class Expense extends Model
     use SoftDeletes;
 
     protected $fillable = [
+        'user_id',
         'financial_period_id',
         'category_id',
         'amount',
-        'expense_date',
-        'description',
         'merchant',
+        'description',
     ];
 
     protected function casts(): array
